@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/a.jpg) center no-repeat;
+    background-size: cover;
+    padding: 5% 10%;
+    position: relative;
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+header, section {
+    z-index: 2;
+}
+
+header {
+    width: 100%;
+}
+
+header ol {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+header ol li {
+    padding: 0 20px;
+    
+}
+
+header ol li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: #818181;
+    font-size: 16px;
+    top: 40%;
+}
+
+header ol li a.active {
+    color: #000000;
+    position: relative;
+}
+
+header ol li a.active::after {
+    content: '';
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: 2px solid #000000;
+}
+
+.login-form{
+    width: 350px;
+    height: 300px;
+    background:url(a.jpg);
+    top: 58%;
+    left: 90%;
+    transform:translate(-50%,-50%);
+    position:absolute;
+     color:rgb(34, 36, 33);
+    padding: 20px;
+}
+.login-form p{
+    font: size 15px;;
+    margin: 15px;
+}
+.login-form input{
+    font-size: 15px;
+    margin: 15px; 
+    padding: 15px 10px;
+
+}
+h3{
+    font-size: 40px;
+    color: #e2860c;
+    font-weight: 400;
+    top:10%;
+    left: 20%;
+
+}
